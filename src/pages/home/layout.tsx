@@ -1,0 +1,11 @@
+import { type ReactNode } from 'react'
+
+export default function Layout({ children }: { children: ReactNode }) {
+    console.log('Layout')
+    return (
+        <div className="flex flex-col min-h-screen w-full">
+            <div>Layout</div>
+            <div>{children}</div>
+        </div>
+    )
+}
